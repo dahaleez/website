@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="os-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahaleez OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="scanlines"></div>
+
+    <header class="os-header-title">
+        <span class="title-ar">مجموعة دهاليز</span>
+        <span class="title-divider">//</span>
+        <span class="title-en">Dahaleez Collective</span>
+    </header>
+
+    <div class="camera-telemetry-osd">
+        <div class="osd-row"><span class="osd-blink">●</span> REC [LIVE]</div>
+        <div class="osd-row">DATE: 14 November 2021</div>
+        <div class="osd-row">TIME: 12:13 GMT+2</div>
+        <div class="osd-row">LOC: GAZA, PALESTINE</div>
+        <div class="osd-row">COORD: 31.53430° N, 34.44280° E</div>
+    </div>
+
+    <div class="center-bottom-copyrights" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 5; font-family: 'Share Tech Mono', 'Cairo', sans-serif; font-size: 0.68rem; color: #e53c8d; text-shadow: 0 0 6px rgba(229, 60, 141, 0.35); text-align: center; line-height: 1.5; pointer-events: none; width: 90%; max-width: 800px;">
+        <div style="direction: rtl;">حقوق الملكية الفكرية والتصميم محفوظة لـ مجموعة دهاليز وشركائهم. يمنع استخدام محتويات هذا الموقع بدون إذن المجموعة.</div>
+        <div style="direction: ltr; margin-top: 2px; letter-spacing: 0.5px;">© 2026 Dahaleez Collective. All rights reserved.</div>
+    </div>
+
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="background-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="desktop-background"></div>
+
+    <div class="desktop-screen">
+        
+        <div class="desktop-folder" data-folder="about">
+            <div class="folder-icon-wrapper">
+                <span class="folder-glow"></span>
+                <img src="LOGO Dahaleez final-02.png" alt="عنا" class="custom-logo-icon">
+            </div>
+            <div class="folder-name">عنا / About</div>
+        </div>
+
+        <div class="desktop-folder" data-folder="projects">
+            <div class="folder-icon-wrapper">
+                <span class="folder-glow pink-glow"></span>
+                <img src="LOGO Dahaleez our project-02-01.png" alt="مشاريعنا" class="custom-logo-icon">
+            </div>
+            <div class="folder-name">مشاريعنا / Projects</div>
+        </div>
+
+        <div class="desktop-folder" data-folder="contact">
+            <div class="folder-icon-wrapper">
+                <span class="folder-glow"></span>
+                <img src="LOGO Dahaleez contact us-01.png" alt="اتصل بنا" class="custom-logo-icon">
+            </div>
+            <div class="folder-name">اتصل بنا / Contact</div>
+        </div>
+    </div>
+
+    <div class="window-wrapper" id="notepad-window">
+        <div class="window-header" id="notepad-header">
+            <div class="window-title" id="window-title-text">المذكرة - Notepad</div>
+            <div class="window-controls">
+                <button class="window-lang-toggle-btn" id="window-lang-btn" style="display: none;">ENG</button>
+                <button class="control-btn close-btn" id="close-window-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body" id="notepad-window-body">
+            <div class="window-content" id="window-body-content"></div>
+        </div>
+    </div>
+
+    <div class="window-wrapper gallery-window-style" id="gallery-window">
+        <div class="window-header" id="gallery-header">
+            <div class="window-title" id="gallery-title-text">معرض الصور / Gallery</div>
+            <div class="window-controls">
+                <button class="control-btn close-btn" id="close-gallery-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="window-content" id="gallery-body-content"></div>
+        </div>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
