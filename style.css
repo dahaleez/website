@@ -722,13 +722,19 @@ body {
     }
 
 
-    /* OSD */
+    /* OSD — تحت الشاشة بدل ما يتداخل مع اسم المجموعة */
     .camera-telemetry-osd {
         font-size: 0.45rem !important;
-        bottom: auto !important;
-        top: 10px !important;
-        left: 10px !important;
+        top: auto !important;
+        bottom: 12px !important;
+        left: 12px !important;
         line-height: 1.6 !important;
+    }
+
+    /* إخفاء مؤشر الماوس المخصص — ما إله داعي باللمس */
+    .custom-cursor,
+    .custom-cursor-dot {
+        display: none !important;
     }
 
     /* إخفاء copyright */
